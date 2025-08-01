@@ -30,7 +30,7 @@ RegisterCommand(cmd, function(source, args)
         if not Player then return end
 
         local permission = QBCore.Functions.GetPermission(src)
-        if permission == "god" or permission == "admin" or permission == "mod" then
+        if permission.god or permission.admin or permission.mod then
             TriggerClientEvent("voicehelper:startCheck", targetId)
         else
             TriggerClientEvent("chat:addMessage", src, {
