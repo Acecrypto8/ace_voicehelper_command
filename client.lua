@@ -1,10 +1,7 @@
 local voiceHelperActive = false
 local micWorking = false
 local displayTimer = 0
-local pushToTalkKey = GetControlInstructionalButton(0, 249, true)
-if pushToTalkKey:sub(1,2) == "t_" then
-    pushToTalkKey = pushToTalkKey:sub(3)
-end
+local pushToTalkKey = 'N'
 
 
 
